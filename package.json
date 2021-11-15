@@ -1,0 +1,23 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=google-chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a6rivas8/a6rivas8.github.io.git"
+  },
+  "author": "Alexander Rivas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a6rivas8/a6rivas8.github.io/issues"
+  },
+  "homepage": "https://github.com/a6rivas8/a6rivas8.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+    }
+}

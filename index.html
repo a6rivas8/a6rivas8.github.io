@@ -5,21 +5,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="icon" type="image/png" src="img/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
 
         <title>Alexander Rivas | Rivas Personal Webpage</title>
     </head>
 
     <body>
-        <header>Welcome to my personal webpage!</header>
+        <header class="header">
+            <div class="header__greeting">Hi, my name is Alexander!</div>
+            
+            <canvas class="header__background"></canvas>
+        </header>        
 
         <main>
-            Hello!
+            <section class="section-about"> 
+                <h1>About Section</h1>
 
-            <section class="section-about"></section>
-            <section class="section-experience"></section>
-            <section class="section-projects"></section>
-            <section class="section-contact"></section>
+                <p>I am software developer that enjoys learning new technologies and building creative projects. I strive to have a great understanding of best practices and stay up to date on the most modern development techniques.</p>
+            </section>
 
+            <section class="section-experience">
+                <h1>Experience Section</h1>
+
+                <h4>Fast Enterprises</h4>
+                <p>Worked as an Implementation Consultant developing solutions for Michigan Driver Services.</p>
+            </section>
+
+            <section class="section-projects">
+                <h1>Projects Section</h1>
+                <ul>
+                    <li>Meme Genie</li>
+                    <li>Fuel Picker</li>
+                    <li>Library Database</li>
+                    <li>Fourier Transform Frequency Filter</li>
+                </ul>
+            </section>
+            
+            <section class="section-contact">
+                <h1>Contact Section</h1>
+
+                <p>Email: rivasoraclea@protonmail.com</p>
+            </section>
         </main>
+
+        <footer></footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+        <script>
+            window.onload = function() {
+                Particles.init({
+                    selector: '.header__background',
+                    maxParticle: 5000,
+                    sizeVariations: 4,  
+                    connectParticles: true,
+                    speed: 0.75,
+                    color: '#87b7ff',
+                    minDistance: 160
+                })
+            }
+        </script>
     </body>
 </html>
