@@ -12,6 +12,21 @@ body {
   line-height: 1.7;
   padding: 3rem; }
 
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: #ffcf87; } }
+
 .header {
   height: 80vh;
   position: relative;
@@ -21,7 +36,19 @@ body {
     font-size: 4rem;
     font-weight: 400;
     opacity: 0.9;
-    text-align: center;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #ffcf87;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
     z-index: 10; }
   .header__background {
     position: absolute;
@@ -32,30 +59,36 @@ body {
     left: 0;
     z-index: 0; }
 
-.section-about {
-  margin-top: 100px; }
+.heading-section {
+  font-size: 4.8rem;
+  font-weight: 400;
+  padding: 2rem; }
 
-.section-experience {
-  margin-top: 100px; }
+.about {
+  margin-top: 10rem; }
+  .about__description {
+    font-size: 1.6rem;
+    padding-left: 5rem; }
 
-.section-projects {
-  margin-top: 100px; }
+.experience {
+  margin-top: 8rem; }
+  .experience__company {
+    font-size: 3.2rem;
+    font-weight: 350;
+    padding: 2rem; }
+  .experience__description {
+    font-size: 1.6rem;
+    padding-left: 5rem; }
 
-.section-contact {
-  margin-top: 100px; }
+.projects {
+  margin-top: 8rem; }
 
-.h1 {
-  margin: 0 5% 0 5%;
-  font-size: 2rem;
-  font-weight: 400; }
+.contact {
+  margin-top: 8rem; }
+  .contact__email {
+    font-size: 1.6rem;
+    padding-left: 5rem; }
 
-.h4 {
-  margin: 0 7.5% 0 7.5%;
-  font-size: 1rem;
-  font-weight: 300; }
-
-p {
-  margin: 0 10% 0 10%; }
-
-.ul {
-  margin: 0 10% 0 10%; }
+ul {
+  padding-left: 5rem;
+  font-size: 1.6rem; }
