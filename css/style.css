@@ -17,7 +17,7 @@ body {
   from {
     width: 0; }
   to {
-    width: 100%; } }
+    width: 30%; } }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
@@ -35,7 +35,6 @@ body {
     position: absolute;
     font-size: 4rem;
     font-weight: 400;
-    opacity: 0.9;
     left: 50%;
     top: 50%;
     overflow: hidden;
