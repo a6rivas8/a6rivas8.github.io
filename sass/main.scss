@@ -37,6 +37,8 @@ body {
 	margin-bottom: 100px;
 
 	&__greeting {
+		// TODO: need to check out Brave and firefox and see what's up with the greeting
+		//		 also all text is larger - probably my browser settings
 		position: absolute;
 		font-size: 6rem;
 		font-weight: 500;
