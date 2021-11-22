@@ -27,9 +27,9 @@ body {
   .header__greeting {
     position: absolute;
     font-size: 6rem;
-    font-weight: 500;
-    left: 50%;
+    font-weight: 400;
     top: 50%;
+    right: 0;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid #ffcf87;
@@ -58,7 +58,11 @@ body {
   margin-top: 14rem; }
   .about__description {
     font-size: 1.7rem;
-    padding-left: 5rem; }
+    margin-left: 5rem;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
 
 .experience {
   margin-top: 8rem; }
@@ -72,13 +76,33 @@ body {
 
 .projects {
   margin-top: 8rem; }
+  .projects__list {
+    font-size: 1.7rem;
+    margin-left: 5rem;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
 
 .contact {
   margin-top: 8rem; }
-  .contact__email {
+  .contact__info {
     font-size: 1.7rem;
-    padding-left: 5rem; }
+    margin-left: 5rem;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4); }
 
 ul {
-  padding-left: 5rem;
-  font-size: 1.7rem; }
+  list-style-type: none; }
+
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  outline-style: none;
+  color: #000000; }
+
+a:hover {
+  color: #ffcf87; }

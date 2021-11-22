@@ -1,4 +1,6 @@
 $default-font-size: 1.7rem;
+$color-white: #ffffff;
+$color-black: #000000;
 $background-page-color: #d8f5fe;
 $contrast-header-cursor-color: #ffcf87;
 
@@ -41,9 +43,9 @@ body {
 		//		 also all text is larger - probably my browser settings
 		position: absolute;
 		font-size: 6rem;
-		font-weight: 500;
-		left: 50%;
+		font-weight: 400;
 		top: 50%;
+		right: 0;
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
 		border-right: 0.15em solid $contrast-header-cursor-color; /* The typwriter cursor */
 		white-space: nowrap;
@@ -75,7 +77,12 @@ body {
 
 	&__description {
 		font-size: $default-font-size;
-		padding-left: 5rem;
+		margin-left: 5rem;
+		padding: 3rem;
+
+		background-color: $color-white;
+		border-radius: 2rem;
+		box-shadow: 0 2rem 2rem rgba($color-black, 0.4);
 	}
 }
 
@@ -96,18 +103,44 @@ body {
 
 .projects {
 	margin-top: 8rem;
+
+	&__list {
+		font-size: $default-font-size;
+		margin-left: 5rem;
+		padding: 3rem;
+
+		background-color: $color-white;
+		border-radius: 2rem;
+		box-shadow: 0 2rem 2rem rgba($color-black, 0.4);
+	}
 }
 
 .contact {
 	margin-top: 8rem;
 
-	&__email {
+	&__info {
 		font-size: $default-font-size;
-		padding-left: 5rem;
+		margin-left: 5rem;
+		padding: 3rem;
+
+		background-color: $color-white;
+		border-radius: 2rem;
+		box-shadow: 0 2rem 2rem rgba($color-black, 0.4);
 	}
 }
 
 ul {
-	padding-left: 5rem;
-	font-size: $default-font-size;
+	list-style-type: none;
+}
+
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+	outline-style: none;
+	color: $color-black;
+}
+
+a:hover {
+	color: $contrast-header-cursor-color;
 }
