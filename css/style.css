@@ -1,3 +1,11 @@
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: #ffcf87; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +19,6 @@ body {
   background-color: #d8f5fe;
   line-height: 1.7;
   padding: 3rem; }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent; }
-  50% {
-    border-color: #ffcf87; } }
 
 .header {
   height: 80vh;

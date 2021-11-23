@@ -1,8 +1,5 @@
-$default-font-size: 1.7rem;
-$color-white: #ffffff;
-$color-black: #000000;
-$background-page-color: #d8f5fe;
-$contrast-header-cursor-color: #ffcf87;
+@import "base/animations";
+@import "abstracts/variables";
 
 * {
 	margin: 0;
@@ -20,17 +17,6 @@ body {
 	background-color: $background-page-color;
 	line-height: 1.7;
 	padding: 3rem;
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-	from,
-	to {
-		border-color: transparent;
-	}
-	50% {
-		border-color: $contrast-header-cursor-color;
-	}
 }
 
 .header {

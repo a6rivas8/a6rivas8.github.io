@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: $contrast-header-cursor-color;
+	}
+}
