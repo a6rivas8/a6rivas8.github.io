@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	// definition of 1 rem on website
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: $background-page-color;
+	line-height: 1.7;
+	padding: 3rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+	outline-style: none;
+	color: $color-link;
+}
+
+a:hover {
+	color: $color-black;
+}

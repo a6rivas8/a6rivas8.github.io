@@ -20,7 +20,7 @@
 
         <main>
             <!--------------------------------- ABOUT --------------------------------->
-            <section class="about">
+            <section class="about u-margin-top-large">
                 <h1 class="heading-section">About</h1>
 
                 <div class="about__description">
@@ -32,31 +32,47 @@
              <!---TODO: I think I want to have a card style 2 per row with heading title of project
                         (a little more width to cover majority of space)
                        and description with heading title being link or have a "Check it out" link-->
-            <section class="experience">
+            <section class="experience u-margin-top-medium">
                 <h1 class="heading-section">Experience</h1>
 
-                <h2 class="experience__company">Fast Enterprises</h2>
-                <p class="experience__description">Worked as an Implementation Consultant developing solutions for Michigan Driver Services using Visual Basic and writing SQL.</p>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h2 class="experience__company">Fast Enterprises</h2>
+                        <p class="experience__description">Worked as an Implementation Consultant developing solutions for Michigan Driver Services using Visual Basic and writing SQL.</p>
+                    </div>
+                </div>
             </section>
 
             <!-------------------------------- PROJECTS ------------------------------->
             <!---TODO: I think I want to have a card style 3 per row with heading title of project
                        and description with heading title being link or have a "Check it out" link-->
-            <section class="projects">
+            <section class="projects u-margin-top-medium">
                 <h1 class="heading-section">Projects</h1>
 
-                <div class="projects__list">
-                    <ul>
-                        <li><a href="https://github.com/a6rivas8/MemeGenie">Meme Genie</a></li>
-                        <li><a href="https://github.com/a6rivas8/SoftwareDesign">Fuel Picker</a></li>
-                        <li><a href="https://gitlab.com/sp2019-cosc3380-team10/library-database">Library Database</a></li>
-                        <li><a href="https://github.com/a6rivas8/Frquency-Filtering">Fourier Transform Frequency Filter</a></li>
-                    </ul>
+                
+                <div class="row">
+                    <div class="projects__list">
+                        <div class="col-1-of-4">
+                            <a href="https://github.com/a6rivas8/MemeGenie">Meme Genie</a>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <a href="https://github.com/a6rivas8/SoftwareDesign">Fuel Picker</a>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <a href="https://gitlab.com/sp2019-cosc3380-team10/library-database">Library Database</a>
+                        </div>
+
+                        <div class="col-1-of-4">
+                            <a href="https://github.com/a6rivas8/Frquency-Filtering">Fourier Transform Frequency Filter</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             
             <!-------------------------------- CONTACT -------------------------------->
-            <section class="contact">
+            <section class="contact u-margin-top-medium">
                 <h1 class="heading-section">Contact</h1>
 
                 <div class="contact__info">
@@ -81,48 +97,6 @@
                 })
             }
         </script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded',function(event){
-            // text with greeting note: may add other substrings to have an array display
-            var greetText = "Hi, my name is Alexander!";
-  
-            function typeWriter(text, i, fnCallback) {
-                // check if text isn't finished yet
-                if (i < (text.length)) {
-                    // add next character to greeting
-                    document.querySelector(".header__greeting").innerHTML = text.substring(0, i+1);
-
-                    setTimeout(function() {
-                        typeWriter(text, i + 1, fnCallback)
-                    }, 100);
-                }
-                // text finished, call callback if there is a callback function
-                else if (typeof fnCallback == 'function') {
-                    // call callback after timeout
-                    setTimeout(fnCallback, 700);
-                }
-            }
-
-            function startTextAnimation() {
-                if (typeof greetText == 'undefined'){
-                    setTimeout(function() {
-                        startTextAnimation();
-                    }, 20000);
-                }
-
-                
-                if (greetText.length > 0) {
-                    typeWriter(greetText, 0, function() {
-                        // if array of texts being displayed
-                        // startTextAnimation(i + 1);
-                    });
-                }
-            }
-
-            // future ref: set parameter if greetText holds string array
-            startTextAnimation();
-            });
-        </script>
+        <script src="js/typeWriter.js"></script>
     </body>
 </html>

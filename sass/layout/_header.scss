@@ -1,0 +1,36 @@
+.header {
+	height: 80vh;
+	position: relative;
+	margin-bottom: 100px;
+
+	&__greeting {
+		position: absolute;
+		font-size: 6rem;
+		font-weight: 400;
+		top: 50%;
+		right: 0;
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		border-right: 0.15em solid $contrast-header-cursor-color; /* The typwriter cursor */
+		white-space: nowrap;
+		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		letter-spacing: 0.1em;
+		animation: blink-caret 1s steps(1) infinite;
+		z-index: 10;
+	}
+
+	&__background {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+}
+
+.heading-section {
+	font-size: $default-font-size * 2.5;
+	font-weight: 400;
+	padding: 2rem;
+}

@@ -1,0 +1,47 @@
+.about {
+	&__description {
+		font-size: $default-font-size;
+		margin-left: 5rem;
+		padding: 3rem 4rem;
+
+		background-color: $color-white;
+		border-radius: 0.5rem;
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+	}
+}
+
+.experience {
+	&__company {
+		font-size: $default-font-size * 1.5;
+		font-weight: 350;
+		padding: 2rem;
+	}
+
+	&__description {
+		font-size: $default-font-size;
+		padding: 0 0 2rem 5rem;
+	}
+}
+
+.projects {
+	&__list {
+		width: 100%;
+		height: 100%;
+
+		font-size: $default-font-size;
+		font-weight: 700;
+		padding: 3rem;
+	}
+}
+
+.contact {
+	&__info {
+		font-size: $default-font-size;
+		margin-left: 5rem;
+		padding: 3rem 4rem;
+
+		background-color: $color-white;
+		border-radius: 0.5rem;
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+	}
+}

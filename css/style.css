@@ -6,6 +6,12 @@
   50% {
     border-color: #ffcf87; } }
 
+.u-margin-top-medium {
+  margin-top: 8rem; }
+
+.u-margin-top-large {
+  margin-top: 14rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +25,19 @@ body {
   background-color: #d8f5fe;
   line-height: 1.7;
   padding: 3rem; }
+
+ul {
+  list-style-type: none; }
+
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  outline-style: none;
+  color: #624fee; }
+
+a:hover {
+  color: #000000; }
 
 .header {
   height: 80vh;
@@ -54,56 +73,62 @@ body {
   font-weight: 400;
   padding: 2rem; }
 
-.about {
-  margin-top: 14rem; }
-  .about__description {
-    font-size: 1.7rem;
-    margin-left: 5rem;
-    padding: 3rem 4rem;
-    background-color: #ffffff;
+.row {
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
     border-radius: 0.5rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
-
-.experience {
-  margin-top: 8rem; }
-  .experience__company {
-    font-size: 2.55rem;
-    font-weight: 350;
-    padding: 2rem; }
-  .experience__description {
-    font-size: 1.7rem;
-    padding-left: 5rem; }
-
-.projects {
-  margin-top: 8rem; }
-  .projects__list {
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin-left: 5rem;
-    padding: 3rem 4rem;
     background-color: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-1-of-4 {
     border-radius: 0.5rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
-
-.contact {
-  margin-top: 8rem; }
-  .contact__info {
-    font-size: 1.7rem;
-    margin-left: 5rem;
-    padding: 3rem 4rem;
     background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    width: calc((100% - 3 * 6rem) / 4);
+    height: 12 rem;
+    padding: 3rem;
+    text-align: center; }
 
-ul {
-  list-style-type: none; }
+.about__description {
+  font-size: 1.7rem;
+  margin-left: 5rem;
+  padding: 3rem 4rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
-a:visited,
-a:link,
-a:active {
-  text-decoration: none;
-  outline-style: none;
-  color: #624fee; }
+.experience__company {
+  font-size: 2.55rem;
+  font-weight: 350;
+  padding: 2rem; }
 
-a:hover {
-  color: #000000; }
+.experience__description {
+  font-size: 1.7rem;
+  padding: 0 0 2rem 5rem; }
+
+.projects__list {
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 3rem; }
+
+.contact__info {
+  font-size: 1.7rem;
+  margin-left: 5rem;
+  padding: 3rem 4rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
