@@ -1,6 +1,6 @@
 .row {
 	//max-width: $grid-width;
-	margin: 0 auto;
+	margin-left: 5rem;
 
 	&:not(:last-child) {
 		margin-bottom: $gutter-vertical;
@@ -25,7 +25,14 @@
 	}
 
 	.col-1-of-3 {
+		border-radius: 0.5rem;
+		background-color: $color-white;
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+		padding: 3rem;
+
 		width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+		text-align: center;
 	}
 
 	.col-1-of-4 {

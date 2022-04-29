@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/a6rivas8/a6rivas8.github.io#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
-    }
+    "node-sass": "^7.0.1"
+  }
 }

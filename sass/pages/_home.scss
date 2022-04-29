@@ -29,8 +29,11 @@
 		height: 100%;
 
 		font-size: $default-font-size;
-		font-weight: 700;
 		padding: 3rem;
+	}
+
+	a {
+		font-weight: 700;
 	}
 }
 
